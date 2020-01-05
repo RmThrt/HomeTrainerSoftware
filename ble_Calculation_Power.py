@@ -10,6 +10,7 @@ import logging
 import asyncio
 import binascii
 import struct
+import os
 
 from bleak import BleakClient
 from bleak import _logger as logger
@@ -101,7 +102,7 @@ async def run(address, loop, debug=True):
 
 
 if __name__ == "__main__":
-    import os
+    
 
     os.environ["PYTHONASYNCIODEBUG"] = str(1)
     
